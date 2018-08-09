@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>아르코미술관</title>
+ 
+ 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!-- <link rel="shortcut icon" href="http://abc019.dothome.co.kr/favicon.ico" /> -->
+		<link rel="shortcut icon" type="image/x-icon" href="images/arko_logo_.ico" />
+		<link rel="apple-touch-icon-precomposed" href="http://abc019.dothome.co.kr/arko-logo.png" />
+		<meta name="viewport" content="width=1060" />
+
+
+		<link type="text/css" rel="stylesheet" href="css/popup.css" />
+		<link type="text/css" rel="stylesheet" href="css/ui.totop.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/popup.js"></script>
+		<script src="js/easing.js"></script>  <!--totop플러그인보다 이징플러그인 먼저 써져야함-->
+        <script src="js/jquery.ui.totop.js "></script>
+        <script src="js/common.js"></script>
+        <script src="js/jquery.colorbox.js"></script>
+		<script src="js/main.js"></script>
+ 
+	</head>
+
+	<body>
+		<div id="popup">
+            <div id="p_wrap">
+            	<h2>NOTICE</h2>
+                <p>
+                	본 사이트는 <span class="red_text">상업적 목적이 아닌 개인 포트폴리오 용도</span>로 만들어 졌습니다.<br />
+                    홈페이지의 일부 내용과 이미지 등은 그 출처가 따로 있음을 밝힙니다.<br />
+                    본 사이트는 <span class="red_text">HTML5</span>와 <span class="red_text">CSS3</span>를 기준으로 하여 <span class="red_text">크로스브라우징 기술을 기반</span>으로한 <span class="red_text">IE10이상, 크롬 등의 브라우저에<br /> 맞춘 홈페이지</span>입니다.
+                </p>
+            </div>
+            <form name="notice_form"><!--제이쿼리에서 사용될 네임-->
+            	<fieldset>
+                	<legend>오늘하루보지않기 폼</legend>
+                	<input type="checkbox" id="chkbox" /><label for="chkbox">오늘하루보지 않기</label> <a href="#close">[close]</a>
+                </fieldset>
+            </form>
+        </div>
+		<header>
+		    <div class="h_wrap">	 
+				<nav class="top_nav">
+					<ul>
+						<li class="top1"><a href="#" title="로그인페이지 바로가기">LOGIN</a></li>
+						<li class="top2"><a href="sub/join.html" title="회원가입페이지 바로가기">JOIN</a></li>
+						<li class="top3"><a href="#" title="사이트맵페이지 바로가기">SITEMAP</a></li>
+					</ul>
+				</nav>
+
+				<h1><a href="#"><img src="images/arkologo.png"></a></h1>
+
+			    <nav class="m_nav">
+				  <ul>
+				  	<li class="m_nav_list"><a href="#" title="아르코미술관메뉴" class="main_nav">미술관소개</a>
+				  		<ul class="sub_nav">
+				  			<li><a href="#">&gt; 소개</a></li>
+				  			<li><a href="#">&gt; 오시는 길</a></li>
+				  			<li><a href="#">&gt; 관람안내</a></li>
+				  			<li><a href="#">&gt; 소장품</a></li>
+				  		</ul>
+				  	</li>
+				  	<li class="m_nav_list"><a href="#" title="아르코미술관메뉴" class="main_nav">전시/프로젝트</a>
+				  		<ul class="sub_nav">
+				  			<li><a href="#">&gt; 현재전시</a></li>
+				  			<li><a href="#">&gt; 예정전시</a></li>
+				  			<li><a href="#">&gt; 지난전시</a></li>
+				  			<li><a href="#">&gt; 융복합프로젝트</a></li>
+				  		</ul>
+				  	</li>
+				  	<li class="m_nav_list"><a href="#" title="아르코미술관메뉴" class="main_nav">아카이브</a>
+				  		<ul class="sub_nav sub03">
+				  			<li><a href="#">&gt; 아카이브</a></li>
+				  			<li><a href="#">&gt; 아카이브콜렉션</a></li>
+				  			<li><a href="#">&gt; 아카이브프로젝트</a></li>
+				  			<li><a href="#">&gt; 연구 및 출판</a></li>
+				  		</ul>
+				  	</li>
+				  	<li class="m_nav_list"><a href="#" title="아르코미술관메뉴" class="main_nav">교육프로그램</a>
+				  		<ul class="sub_nav">
+				  			<li><a href="#">&gt; 건축교실</a></li>
+				  			<li><a href="#">&gt; 전시연계</a></li> 
+				  		</ul>
+				  	</li>
+				  	<li class="m_nav_list"><a href="#" title="아르코미술관메뉴" class="main_nav">커뮤니티</a>
+				  		<ul class="sub_nav sub05">
+				  			<li><a href="#">&gt; 뉴스</a></li>
+				  			<li><a href="#">&gt; FAQ</a></li>
+				  			<li><a href="#">&gt; 문의사항</a></li>
+				  			<li><a href="#">&gt; 관람후기</a></li>
+				  			<li><a href="#">&gt; 채용안내</a></li>
+				  		</ul>
+				  	</li>		 
+				  </ul>					
+				</nav>
+				<div class="allmenu">
+				   <a href="#"><img src="images/all_menu.png" alt="전체메뉴버튼" ></a>
+				</div>
+			</div>
+		</header>
+
+
+
+		<section>
+			<!-- <div class="m_slider">
+				<ul>
+					<li><img src="images/main_slider_1.jpg"></li>
+					<li><img src="images/main_slider_2.jpg"></li>
+					<li><img src="images/main_slider_3.jpg"></li>
+					<li><img src="images/main_slider_4.jpg"></li>
+				</ul>
+
+
+			</div> -->
+			<div class="slide">
+		    	<button class="prev" type="button"><img src="images/left.png" alt="" /></button>
+				<ul>
+					<li><img src="images/main_slider_1.jpg" alt="첫번째 메인이미지"></li>
+					<li><img src="images/main_slider_2.jpg" alt="두번째 메인이미지"></li>
+					<li><img src="images/main_slider_3.jpg" alt="세번째 메인이미지"></li>
+					<li><img src="images/main_slider_4.jpg" alt="네번째 메인이미지"></li>
+				</ul>
+				<button class="next" type="button"><img src="images/right.png" alt="" /></button>
+    		</div>
+
+
+
+			<div class="s_top">
+				<h3><a href="#"> ARKO'S COLLECTION</a></h3>
+				<ul >
+					<li><a href="#"><img src="images/s_top_1.jpg" alt="이미지아웃" class="first"/><img src="images/s_top_hover_1.jpg" alt="이미지오버" class="last"/></a></li>
+					<li><a href="#"><img src="images/s_top_2.jpg" alt="이미지아웃" class="first"/><img src="images/s_top_hover_2.jpg" alt="이미지오버" class="last"/></a></li>
+					<li><a href="#"><img src="images/s_top_3.jpg" alt="이미지아웃" class="first"/><img src="images/s_top_hover_3.jpg" alt="이미지오버" class="last"/></a></li>
+					<li><a href="#"><img src="images/s_top_4.jpg" alt="이미지아웃" class="first"/><img src="images/s_top_hover_4.jpg" alt="이미지오버" class="last"/></a></li>
+					<li><a href="#"><img src="images/s_top_5.jpg" alt="이미지아웃" class="first"/><img src="images/s_top_hover_5.jpg" alt="이미지오버" class="last"/></a></li>
+					<li class="last"><a href="#"><img src="images/s_top_6.jpg" alt="이미지아웃" class="first"/><img src="images/s_top_hover_6.jpg" alt="이미지오버" class="last"/></a></li>
+				</ul>
+			</div>
+			<div class="s_middle">
+			   <div class="s_m">
+					<div class="s_m_left">
+						<h3><a href="#">UPCOMING EXHIBITION</a></h3>
+						<ul>
+							<li><a href="#"><img src="images/s_m_left_1.jpg" alt="예정전시1" class="first" /></a></li>
+							<li><a href="#"><img src="images/s_m_left_2.jpg" alt="예정전시2" class="last" /></a></li>
+						</ul>
+
+	                   <!-- <a href="#"> <img src="images/s_m_left_1-1.jpg" alt="예정전시타이틀" class="first" /></a>
+	                    <div class="view_over">
+	                 		<span>관계 FICTION95-111 김재중</span>
+	                </div> -->
+				     </div>
+
+				    <div class="s_m_right">
+						<h3>NEWS &amp; INFOMATION</h3>
+				 	    <ul class="s_m_right_img">
+
+							<li class="box_1"><a href="#" ><img src="images/box_1.jpg" alt="관람안내아이콘" /></a></li>
+							<li class="box_2"><a href="#" ><img src="images/box_2.jpg" alt="건축교실사진" class="first" /><img src="images/box_2-1.jpg" class="last"></a></li>
+							<li class="box_3"><a href="#" ><img src="images/box_3.jpg" alt="미술관배경사진" class="first" /><img src="images/box_3-1.jpg" class="last" /></a></li>
+							<li class="box_4"><a href="#" ><img src="images/box_4.jpg" alt="오시는길아이콘" /></a></li>
+		 			    </ul>				 
+					</div>
+			   </div>
+			</div>
+
+			<div class="s_bottom">
+	 
+				<div class="s_bottom_1" >
+					<a href="#"><img src="images/s_b_1.jpg" alt="문의사항아이콘"> </a> 
+					<h4><a href="#">문의사항</a></h4>
+					<P>언제든지 궁금하신 것이 있으시면 저희에게 연락해 주세요. 전화, 메일, 팩스 무엇이든 환영합니다.</P>
+				</div>
+
+				<div class="s_bottom_2">
+					<a href="#" ><img src="images/s_b_2.jpg" alt="대관안내아이콘"> </a>
+					<h4><a href="#">대관안내</a></h4>
+					<P>예술 발전에 기여할 수 있는 전시회 등 문화예술행사를 개최하기 위해 시설대관을 이용할 수 있습니다.</P>
+				</div>
+
+				<div class="s_bottom_3">
+					<a href="#"><img src="images/s_b_3.jpg" alt="관람후기아이콘"> </a>
+					<h4><a href="#">관람후기</a></h4>
+					<P>관람후 감상평을 보내주세요. 보내주신 모든 분들께 아르코 미술관 1회 관람권을 드립니다.</P>
+				</div>
+			  
+
+				<div  class="s_bottom_4">
+					<a href="#"><img src="images/s_b_4.jpg" alt="아카이브아이콘"> </a>
+					<h4><a href="#">아카이브 이용</a> </h4>
+					<P>우리 미술관의 자료들을 쉽게검색하고 열람가능합니다.</P>
+				</div>
+
+				<div class="s_bottom_5">
+					<a href="#"><img src="images/s_b_5.jpg" alt="단체관람아이콘"> </a>
+					<h4><a href="#">단체관람안내</a></h4>
+					<P>쾌적한 관람환경과 안전사고 예방을 위해 어린이들의 단체관람예약제를 시행하고 있습니다.</P>
+				</div>
+
+				<div class="s_bottom_6">
+					<a href="#" ><img src="images/s_b_6.jpg" alt="채용안내아이콘"> </a>
+					<h4><a href="#">채용안내</a></h4>
+					<P>예술과 전시에 관심있는 열정 넘치는 인재를 언제나기다리고 있습니다.</P>
+				</div>
+
+			</div>			 
+		</section> 
+
+
+		<footer>
+			<div class="f_wrap">
+				<ul>
+				  <li><a href="#" class="f_1">개인정보취급방침</a></li>
+				  <li><a href="#" class="f_2">이용약관</a></li>
+				  <li><a href="#" class="f_3">사이트맵</a></li>
+				</ul>
+			
+				<address>주소 03087 서울시 종로구 동숭길 3 | 사업자등록번호 208-82-01138 | 전화 02-760-4850~3 </address>
+				<p>Copyright © 2016 Arko Art Center. All Rights Reserved.</p>
+				<div class="family_site">
+	                <button>FAMILY SITE<span class="icon">^</span></button>
+	                <ul>
+	                    <li><a href="http://www.arko.or.kr/" target="_blank">한국문화예술위원회</a></li>
+	                    <li><a href="http://www.insaartspace.or.kr/" target="_blank">인사미술공간</a></li>
+	                    <li><a href="http://www.artistree.or.kr/main.do" target="_blank">예술나무</a></li>
+	                </ul>  
+	            </div>
+	            <div>
+	 				<nav class="sns_nav">					
+						<ul>
+							<li><a href="https://www.facebook.com/ArkoArtCenter"target="_blank" title="페이스북 바로가기"><img src="images/febook.png" alt="페이스북" /></a></li>
+							<li><a href="https://www.instagram.com/arkoartcenter/"target="_blank" title="인스타그램 바로가기"><img src ="images/insta.png" alt="인스타그램" /></a></li>
+							<li><a href="https://twitter.com/arkoartcenter" target="_blank"title="트위터 바로가기"><img src="images/twitter.png" alt="트위터" /></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
+</html>
+
+
+
+
+ 
